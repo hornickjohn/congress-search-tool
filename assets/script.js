@@ -12,6 +12,10 @@ if(format === "") {
 apiURL += "?q=" + params.get('search');
 apiURL += "&fo=json";
 
+document.getElementById('backbutton').addEventListener('click', function() {
+    location.href="./index.html";
+});
+
 fetch(apiURL)
 .then(function (response) {
     return response.json();
