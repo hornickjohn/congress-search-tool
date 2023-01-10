@@ -7,8 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="backbutton">Go Back</button>
-    <div id="outputarea"></div>
+    <div id="leftside">
+        <form action="./results.html">
+            <input name ="search" placeholder="Search!"><br>
+            <select name = "dropdown">
+               <option value="" selected>Select a Format...</option>
+               <option value="websites">Archived Websites</option>
+               <option value="audio">Audio Recordings</option>
+               <option value="film-and-videos">Film/Videos</option>
+               <option value="manuscripts">Manuscripts/Mixed Material</option>
+               <option value="maps">Maps</option>
+               <option value="newspapers">Newspapers</option>
+               <option value="photos">Photo/Print/Drawing</option>
+               <option value="notated-music">Printed Music</option>
+            </select>
+            <button type ="submit">Search</button>
+         </form>
+        <button id="backbutton">Go Back</button>
+    </div>
+    <div id="rightside">
+        <h2>Results</h2>
+        <div id="outputarea"></div>
+    </div>
     <script src="./assets/script.js"></script>
 </body>
 </html>
